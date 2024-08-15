@@ -12,3 +12,12 @@ const result = findItems(arrayOfObjects, function (item) {
 // Read the README.md file first
 // Expected output [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' } ]
 // Make the function findItems as a function declaration here
+function findItems(arr, callback) {
+  let a = [];
+  arr.forEach(el => {
+    if(callback(el)){
+      a.push(el)
+    }
+  });
+  return console.log(a);
+}
