@@ -5,9 +5,9 @@ const arrayOfObjects = [
   { id: 4, name: 'David' },
 ];
 
-const result = findItems(arrayOfObjects, function (item) {
-  return item.id < 3;
-});
+const result = arrayOfObjects.filter((user) => user.id <= 3);
+
+console.log(result);
 
 // Read the README.md file first
 // Expected output [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' } ]
