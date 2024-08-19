@@ -34,3 +34,40 @@ The above code should display:
 1
 0
 ```
+
+# Objek Penghitung yang Dapat Dirantai
+
+## Tujuan
+
+Buat objek `counter` yang melacak hitungan dan memungkinkan Anda menambah, mengurangi, mengatur ulang, dan menampilkan hitungan. Ubah metode objek agar dapat dirangkai, sehingga memungkinkan beberapa pemanggilan metode secara berurutan.
+
+## Petunjuk
+
+### 1. Buat Objek `counter`
+
+Buat objek bernama `counter` dengan properti dan metode berikut:
+
+- **count**: Properti yang menyimpan hitungan saat ini (inisialisasi ke 0).
+
+- **peningkatan**: Metode yang menambah `hitungan` sebanyak 1.
+
+- **pengurangan**: Metode yang mengurangi `hitungan` sebanyak 1.
+
+- **reset**: Metode yang mereset `hitungan` ke 0.
+
+- **showCount**: Metode yang menampilkan hitungan saat ini menggunakan `console.log`.
+
+### 2. Memodifikasi Metode Chaining
+
+Ubah metode `kenaikan`, `penurunan`, `reset`, dan `showCount` agar dapat dirangkai bersama. Misalnya:
+
+```javascript
+counter.peningkatan().peningkatan().penurunan().showCount().reset().showCount();
+```
+
+Kode di atas akan menampilkan:
+
+```
+1
+0
+```
