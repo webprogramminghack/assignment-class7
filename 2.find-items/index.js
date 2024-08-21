@@ -23,7 +23,7 @@ function findItems(arr, callback) {
   }
   
   // see the result
-  // console.log(selectedItem);
+  console.log(selectedItem);
 
   return selectedItem;
 }
