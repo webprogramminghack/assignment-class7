@@ -5,7 +5,19 @@ const arrayOfObjects = [
   { id: 4, name: 'David' },
 ];
 
-const result = arrayOfObjects.filter((user) => user.id <= 3);
+const result = findItems(arrayOfObjects, function (item) {
+  return item.id < 3;
+});
+
+function findItems(arr, item) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (item(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
 
 console.log(result);
 
